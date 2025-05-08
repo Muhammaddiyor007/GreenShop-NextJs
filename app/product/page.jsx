@@ -11,7 +11,6 @@ const ProductShop = async ({ params }) => {
 
 	const respons = await fetch(`https://dummyjson.com/products/${id}`)
 	const data = await respons.json()
-	console.log(data);
 	
 	return (
 		<div className='max-w-[1200px] mx-auto px-[15px] mt-[36px]'>
