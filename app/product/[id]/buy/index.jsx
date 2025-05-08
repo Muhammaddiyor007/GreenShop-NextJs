@@ -1,6 +1,6 @@
 'use client'
-import useNotificationMessage from '@/app/hook/useNotificationMessage/useNotificationMessage'
-import useMessageStore from '@/app/redux/massege/messege'
+import useNotificationMessage from '@/app/hook/Notification/notification'
+import useMessageStore from '@/app/redux/massage/massage'
 import axios from 'axios'
 import { Heart } from 'lucide-react'
 import React, { useState } from 'react'
