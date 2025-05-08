@@ -1,10 +1,10 @@
-import BuyNowSection from '@/app/Components/smartphone'
+import BuyNowSection from '@/app/components/BuyNow'
 import { Rate } from 'antd'
 import { Facebook, Heart, Linkedin, Mail, Twitter } from 'lucide-react'
 import Link from 'next/link'
-import ProductImage from './image'
-import TabsDescription from './tabs'
-import Buy from './buy'
+import ProductImage from './[id]/image'
+import TabsDescription from './[id]/tabs'
+import Buy from './[id]/buy'
 
 const ProductShop = async ({ params }) => {
 	const { id } = await params

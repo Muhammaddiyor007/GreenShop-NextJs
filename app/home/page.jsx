@@ -1,5 +1,5 @@
 
-import Auth from '../Components/Auth'
+import Auth from '../components/Auth'
 import Components from './components';
 
 const Home = async({ searchParams }) => {
