@@ -1,10 +1,12 @@
+'use client'
 import React from 'react'
 import { Form, Input, Button } from 'antd'
 import useAuthStore from '@/app/redux/ModalAuth/AuthSlice'
 import axios from 'axios'
 import useUserStore from '@/app/redux/userData/Data'
-import useMessageStore from '@/app/redux/massage/massage'
+
 import useNotificationMessage from '@/app/hook/Notification/notification'
+import useMessageStore from '@/app/redux/massage/massage'
 
 const Login = () => {
 	const { authIsOpen, authIsOpenSet } = useAuthStore()
@@ -23,8 +25,6 @@ const Login = () => {
 			setMessage('Success', 'Success');
       setUser(response.data);
 			authIsOpenSet()
-			openNotification()
-			
     } catch (error) {
 			setMessage(error.message, 'Error');
     }
@@ -35,7 +35,7 @@ const Login = () => {
 	return (
 		<div>
 			<Form
-				name='loginForm'
+				name='login'
 				layout='vertical'
 				onFinish={onFinish}
 				autoComplete='off'

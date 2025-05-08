@@ -1,3 +1,4 @@
+'use client';
 import Components from './components'
 import Cards from './components/cards'
 

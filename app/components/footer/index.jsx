@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 import Contacts from './contacts'
 import Join from './join'
