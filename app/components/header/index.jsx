@@ -1,12 +1,13 @@
-'use client'; 
-import Navigation from './navBar'
+import React from 'react'
+import ResponsiveHeader from './Responsive'
 
-const CostomHeader = () => {
+const Header = () => {
 	return (
 		<div>
-			<Navigation />
-		</div>
+			<ResponsiveHeader/>
+			</div>
 	)
 }
 
-export default CostomHeader
+
+export default Header

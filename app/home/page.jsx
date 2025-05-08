@@ -1,16 +1,19 @@
-import React from 'react'
-import Hero from './components/hero'
-import HomeMain from './components/main'
+
+import Auth from '../Components/Auth'
+import Components from './components';
+
+const Home = async({ searchParams }) => {
+	const queryObj = await searchParams; 
+	const query = queryObj?.search || '';
+	const categories = queryObj?.category || 'beauty'
 
 
-
-const HomeComponents = () => {
 	return (
-		<div>
-			<Hero/>
-			<HomeMain/>
+		<div className='overflow-hidden'>
+			<Auth/>
+			<Components query={query} categories={categories} />
 		</div>
-	)
-}
+	);
+};
 
-export default HomeComponents
+export default Home;

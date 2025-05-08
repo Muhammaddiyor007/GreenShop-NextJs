@@ -12,21 +12,21 @@ const Hero = () => {
 			title: "LET'S MAKE A BETTER PLANET",
 			content:
 				'We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!',
-			img: '/slider1.png',
+			img: '/plant.png',
 		},
 		{
 			greetings: 'WELCOME TO GREENSHOP',
 			title: "LET'S LIVE IN A BETTER PLANET",
 			content:
 				'We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!',
-			img: '/slider1.png',
+			img: '/plant.png',
 		},
 		{
 			greetings: 'WELCOME TO GREENSHOP',
 			title: "LET'S OBSERVE A BETTER PLANET",
 			content:
 				'We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!',
-			img: '/slider1.png',
+			img: '/plant.png',
 		},
 	]
 	const progressCircle = useRef(null)
